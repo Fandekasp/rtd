@@ -10,7 +10,7 @@ if [ "$1" = "--debug" ]; then
 elif [ "$1" = "runOnce" ]; then
     npm install;
     PATH=$NPM_BIN_PATH:$PATH grunt runOnce --debug;
- else
+else
     npm --silent --save-optional install;
     PATH=$NPM_BIN_PATH:$PATH grunt;
 fi
